@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #E8DCC4;
+    overflow: hidden;
+}
+
+/* Marco exterior */
+.frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: clamp(20px, 3vw, 40px);
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.frame-border {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+/* Container principal */
+.container {
+    position: fixed;
+    top: clamp(20px, 3vw, 40px);
+    left: clamp(20px, 3vw, 40px);
+    right: clamp(20px, 3vw, 40px);
+    bottom: clamp(20px, 3vw, 40px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #F3E4BD;
+    border-radius: 12px;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(10, 10, 10, 1);
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: rgba(243, 228, 189, 0.8);
+    border-radius: 8px;
+}
+
+/* Navegación */
+nav {
+    position: sticky;
+    top: 0;
+    background: #000000c7;
+    backdrop-filter: blur(10px);
+    padding: 22px clamp(20px, 5vw, 60px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav a {
+    color: #F3E4BD;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    opacity: 0.6;
+}
+
+/* ==========================================
+   PÁGINA HOME
+   ========================================== */
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(20px, 5vw, 60px);
+    background: linear-gradient(#0000005c, #000000), url(imagenes/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #F5EFE6;
+    margin-top: -4rem;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-family: "Big Shoulders", "Inter", Arial, sans-serif;
+    font-size: 16rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 0;
+    text-transform: uppercase;   
+}
+
+.berakalogo img {
+    width: 25%;
+    margin-bottom: 1rem;
+}
+.berakalogo span {
+    display: none;
+}
+.rapsodalogo img {
+    width: 100%;
+}
+.rapsodalogo span {
+    display: none;
+}
+
+.hero .subtitle {
+    font-size: clamp(24px, 4vw, 48px);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.hero .description {
+    max-width: 780px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #F5EFE6;
+    font-size: 24px;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.6;
+}
+
+/* Secciones generales */
+.section {
+    padding: clamp(60px, 10vw, 120px) clamp(20px, 5vw, 60px);
+}
+
+.section h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    color: #F3E4BD;
+    text-transform: uppercase;
+}
+
+.section p {
+    font-size: clamp(1.5rem, 2vw, 20px);
+    line-height: 1.75rem;
+    color: #e5e7eb;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Historia */
+.story {
+    background: url(imagenes/pattern.png), #2D2D2D;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* Tracklist */
+.tracklist {
+    background: #0A0A0A;
+}
+
+.tracklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tracklist .track-last {
+    grid-column: 2 / 3; 
+}
+
+.track-item {
+    padding: 15px;
+    background: transparent;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-flow: wrap;
+    transition: background 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.track-item:hover {
+        background: rgb(255 255 255 / 5%);
+}
+
+.track-number {
+    font-size: 16px;
+    font-weight: 800;
+    color: #F3E4BD;
+    min-width: 30px;
+}
+
+.track-title {
+    font-size: 24px;
+    font-family: "Big Shoulders", "Inter", Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+}
+
+.track-feat {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.track-duration {
+    font-size: 16px;
+    color: #f0f0f080;
+    text-align: end;
+}
+
+.album-tracklist.alt .track-item {
+    gap: 16px;    
+}
+
+.album-tracklist.alt .track-item .track-title {
+    font-size: 16px;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    color: #fff;
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background: #0A0A0A;
+    color: #d4c49f;
+    padding: 2rem 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================
+   PÁGINA HISTORIA
+   ========================================== */
+
+.historia-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagenes/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -4rem;
+}
+
+.historia-content {
+    background: #000000;
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px);
+}
+
+.historia-content h2 {
+    font-family: "Big Shoulders", "Inter", Arial, sans-serif;
+    font-size: clamp(5.1rem, 5vw, 48px);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #F3E4BD;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.historia-content h3 {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: clamp(3.1rem, 5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 30px;
+    color: #F3E4BD;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.historia-content p {
+    font-size: clamp(16px, 2vw, 18px);
+    line-height: 1.8;
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+blockquote.emph {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #f3e4bd;
+    line-height: 1.3em;
+    max-width: 900px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ==========================================
+   PÁGINA ÁLBUM
+   ========================================== */
+
+.album-layout {
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 5vw, 60px);
+    background: #0A0A0A;
+    margin-top: -4rem;
+    padding-top: 9rem;
+}
+
+.album-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.album-cover-section {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.album-cover {
+    width: 100%;
+    aspect-ratio: 1;
+    background: url(imagenes/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.album-info h3 {
+    /*--
+    font-family: "Big Shoulders", "Inter", Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #f3e4bd;
+    text-transform: uppercase;
+    margin-bottom: 1rem;--*/
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #F3E4BD;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.album-info p {
+    font-size: 1.2rem;
+    color: #a1a1a1;
+    margin-bottom: 10px;
+}
+.album-info p strong {
+    color: #ADA89A;
+}
+
+.album-info .music-platforms {
+    margin-top: 2em;
+    justify-content: left;
+}
+
+.music-platforms {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-top: 1em;
+    justify-content: center;
+}
+.music-platforms li {
+    width: auto;
+    display: flex;
+}
+.music-platforms li a {
+    width: auto;
+    font-size: 2rem;
+    color: #f3e4bd;
+    text-decoration: none;
+}
+.music-platforms li a:hover {
+    color: #fff;
+}
+
+.disponible {
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+.album-tracklist h2 {
+    font-family: "Big Shoulders", "Inter", Arial, sans-serif;
+    font-size: clamp(5.1rem, 5vw, 48px);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #F3E4BD;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.album-tracklist .track-item {
+    background: transparent;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #d4c49f1a;
+}
+
+.album-tracklist .track-item:hover {
+    background: #dcc9ad52
+}
+
+.track-icon {
+    font-size: 1.4rem;
+    color: #F3E4BD;
+    transition: color 0.3s;
+    vertical-align: middle;
+    display: flex;  
+}
+
+.track-item:hover .track-icon {
+    color: #fff;
+}
+
+/* Créditos */
+.credits-section {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.credits-section h2 {
+    font-family: "Big Shoulders", "Inter", Arial, sans-serif;
+    font-size: clamp(5.1rem, 5vw, 48px);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #F3E4BD;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cred-description {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #f3e4bd;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0 4rem 0;
+    padding: 0 8.5rem;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.credit-item h3 {
+    font-family: "Big Shoulders", Impact, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ADA89A;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+.credit-item ul {
+    list-style: none;
+    width: 100%;
+}
+.credit-item ul li {
+    width: 100%;
+    margin: 0 0 0.8rem 0;
+}
+.credit-item ul li p {
+    font-size: 0.9rem;
+    color: #a1a1a1;
+    line-height: 1.2rem;
+}
+.credit-item ul li p strong {
+    margin-bottom: 0.3em;
+    width: 100%;
+    display: block;
+}
+.credit-item ul li p a {
+    text-decoration: none;
+    color: #a1a1a1;
+}
+.credit-item ul li p a:hover {
+    opacity: .6;
+    transition: opacity 0.3s;
+}
+.credit-item div {
+    margin-top: 3rem;
+}
+/* ==========================================
+   MODAL
+   ========================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.modal-content {
+    padding: 40px;
+    position: relative;
+    background: url(imagenes/pattern.png), #0A0A0A;
+    max-width: 62rem;
+    max-height: 90vh;
+    border-radius: 12px;
+    border: 1px solid #d4c49f61;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2.6rem;
+    color: #f3e4bdfc;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-weight: 200;
+}
+
+.modal-close:hover {
+    opacity: 0.6;
+}
+
+.modal-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f3e4bd;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.modal-track-number {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modalcols {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.modal-section {
+    margin-bottom: 0;
+}
+.modal-section.section-lyrics {
+    height: 50vh;
+    width: 50rem;
+    padding: 1rem;
+    overflow-y: scroll;
+    border: 1px solid #d4c49f61;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+.modal-section.section-credits {
+    height: auto;
+    width: 20rem;
+} 
+
+.modal-section.section-lyrics::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-section.section-lyrics::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.modal-section.section-lyrics::-webkit-scrollbar-thumb {
+    background: #F3E4BD;
+    border-radius: 4px;
+}
+
+.modal-section.section-lyrics::-webkit-scrollbar-thumb:hover {
+    background: #d4c49f;
+}
+
+.modal-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f3e4bd;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-section p.lyrics {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fff;
+}
+.modal-section p.lyrics {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    white-space: pre-wrap;
+}
+.songcredits {
+    color: #fff;
+}
+
+.songcredits ul {
+    list-style: none;
+    width: auto;
+}
+.songcredits ul li {
+    display: block;
+    width: 100%;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+/* ==========================================
+   CTA Y BOTONES
+   ========================================== */
+
+.cta {
+    text-align: center !important;
+    margin-top: 40px !important;
+    padding: 40px 20px !important;
+}
+
+.cta-text {
+    font-size: 1.6rem !important;
+    font-weight: 800;
+    color: #F3E4BD !important;
+    margin-bottom: 2rem !important;
+    text-align: center !important;
+}
+
+.platform-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.platform-btn {
+    padding: 12px 30px;
+    background: #4A4A4A;
+    color: #F5EFE6;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    transition: background 0.3s;
+}
+
+.platform-btn:hover {
+    background: #666;
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 1024px) {
+    /* Tablets */
+    .hero h1 {
+        font-size: 12rem;
+    }
+    
+    .modal-content {
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+    
+    .modalcols {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .modal-section.section-lyrics {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Smartphones */
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 8rem;
+    }
+
+    .album-main {
+        grid-template-columns: 1fr;
+    }
+
+    .album-cover-section {
+        position: static;
+    }
+
+    .credits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .modal-content {
+        max-width: 98%;
+        max-height: 70vh;
+        padding: 25px 15px;
+    }
+    
+    .modalcols {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .modal-section.section-lyrics {
+        width: 100%;
+        height: auto;
+        max-height: 55vh;
+    }
+    
+    .cred-description {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smartphones pequeños */
+    .hero h1 {
+        font-size: 5.5rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .modal-content {
+        max-width: 98%;
+        padding: 20px 12px;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .modal-section h4 {
+        font-size: 14px;
+    }
+    
+    .modal-section p.lyrics {
+        font-size: 14px;
+    }
+    
+    .cred-description {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+}
+@media (max-width: 512px) and (min-width: 320px) {
+    .tracklist .track-last {
+        grid-column: auto; 
+    }
+}
