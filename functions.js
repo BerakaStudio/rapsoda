@@ -48,13 +48,13 @@ const trackData = {
     },
     10: {
         title: "¡Tres, Dos, Uno! ft. Pastor MC",
-        lyricsFile: "letras/10.txt",
-        creditsFile: "creditos/10.txt"
+        lyricsFile: "letras/11.txt",
+        creditsFile: "creditos/11.txt"
     },
     11: {
         title: "Girasoles ft. Sofía Brand",
-        lyricsFile: "letras/11.txt",
-        creditsFile: "creditos/11.txt"
+        lyricsFile: "letras/10.txt",
+        creditsFile: "creditos/10.txt"
     },
     12: {
         title: "Caminata",
