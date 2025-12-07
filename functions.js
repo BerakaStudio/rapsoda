@@ -3,83 +3,83 @@
 const trackData = {
     1: {
         title: "Nuevo Nativo",
-        lyricsFile: "/letras/1.txt",
-        creditsFile: "/creditos/1.txt"
+        lyricsFile: "letras/1.txt",
+        creditsFile: "creditos/1.txt"
     },
     2: {
         title: "La Vida en Rimas",
-        lyricsFile: "/letras/2.txt",
-        creditsFile: "/creditos/2.txt"
+        lyricsFile: "letras/2.txt",
+        creditsFile: "creditos/2.txt"
     },
     3: {
         title: "Ritmo y Libertad ft. MC Guerrero",
-        lyricsFile: "/letras/3.txt",
-        creditsFile: "/creditos/3.txt"
+        lyricsFile: "letras/3.txt",
+        creditsFile: "creditos/3.txt"
     },
     4: {
         title: "Cremita Neoyorquina",
-        lyricsFile: "/letras/4.txt",
-        creditsFile: "/creditos/4.txt"
+        lyricsFile: "letras/4.txt",
+        creditsFile: "creditos/4.txt"
     },
     5: {
         title: "Gracia Natural ft. DJ SDC",
-        lyricsFile: "/letras/5.txt",
-        creditsFile: "/creditos/5.txt"
+        lyricsFile: "letras/5.txt",
+        creditsFile: "creditos/5.txt"
     },
     6: {
         title: "Canutitos",
-        lyricsFile: "/letras/6.txt",
-        creditsFile: "/creditos/6.txt"
+        lyricsFile: "letras/6.txt",
+        creditsFile: "creditos/6.txt"
     },
     7: {
         title: "Bestial",
-        lyricsFile: "/letras/7.txt",
-        creditsFile: "/creditos/7.txt"
+        lyricsFile: "letras/7.txt",
+        creditsFile: "creditos/7.txt"
     },
     8: {
         title: "Reacción, Arte y Protesta ft. Dyestroh",
-        lyricsFile: "/letras/8.txt",
-        creditsFile: "/creditos/8.txt"
+        lyricsFile: "letras/8.txt",
+        creditsFile: "creditos/8.txt"
     },
     9: {
         title: "Oye, Come Back",
-        lyricsFile: "/letras/9.txt",
-        creditsFile: "/creditos/9.txt"
+        lyricsFile: "letras/9.txt",
+        creditsFile: "creditos/9.txt"
     },
     10: {
         title: "¡Tres, Dos, Uno! ft. Pastor MC",
-        lyricsFile: "/letras/10.txt",
-        creditsFile: "/creditos/10.txt"
+        lyricsFile: "letras/10.txt",
+        creditsFile: "creditos/10.txt"
     },
     11: {
         title: "Girasoles ft. Sofía Brand",
-        lyricsFile: "/letras/11.txt",
-        creditsFile: "/creditos/11.txt"
+        lyricsFile: "letras/11.txt",
+        creditsFile: "creditos/11.txt"
     },
     12: {
         title: "Caminata",
-        lyricsFile: "/letras/12.txt",
-        creditsFile: "/creditos/12.txt"
+        lyricsFile: "letras/12.txt",
+        creditsFile: "creditos/12.txt"
     },
     13: {
         title: "Soliloquio",
-        lyricsFile: "/letras/13.txt",
-        creditsFile: "/creditos/13.txt"
+        lyricsFile: "letras/13.txt",
+        creditsFile: "creditos/13.txt"
     },
     14: {
         title: "María Elena ft. Jetzabel Rodríguez y Bryan Mella",
-        lyricsFile: "/letras/14.txt",
-        creditsFile: "/creditos/14.txt"
+        lyricsFile: "letras/14.txt",
+        creditsFile: "creditos/14.txt"
     },
     15: {
         title: "Convicciones ft. Tony Capredi",
-        lyricsFile: "/letras/15.txt",
-        creditsFile: "/creditos/15.txt"
+        lyricsFile: "letras/15.txt",
+        creditsFile: "creditos/15.txt"
     },
     16: {
         title: "Último Llamado",
-        lyricsFile: "/letras/16.txt",
-        creditsFile: "/creditos/16.txt"
+        lyricsFile: "letras/16.txt",
+        creditsFile: "creditos/16.txt"
     }
 };
 
