@@ -47,7 +47,7 @@ const trackData = {
         creditsFile: "creditos/9.txt"
     },
     10: {
-        title: "¡Uno, Dos, Tres! ft. Pastor MC",
+        title: "¡Tres, Dos, Uno! ft. Pastor MC",
         lyricsFile: "letras/10.txt",
         creditsFile: "creditos/10.txt"
     },
@@ -67,7 +67,7 @@ const trackData = {
         creditsFile: "creditos/13.txt"
     },
     14: {
-        title: "María Elena ft. Jetzabel Rodríguez",
+        title: "María Elena ft. Jetzabel Rodríguez y Bryan Mella",
         lyricsFile: "letras/14.txt",
         creditsFile: "creditos/14.txt"
     },
