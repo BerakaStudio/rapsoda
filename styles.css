@@ -526,6 +526,10 @@ blockquote.emph {
     margin-bottom: 60px;
 }
 
+.credit-item.thanks {
+    min-width: 71vw;
+}
+
 .credit-item h3 {
     font-family: "Big Shoulders", Impact, sans-serif;
     font-size: 1.3rem;
@@ -872,5 +876,8 @@ blockquote.emph {
 @media (max-width: 512px) and (min-width: 320px) {
     .tracklist .track-last {
         grid-column: auto; 
+    }
+    .credit-item.thanks {
+        min-width: 30vw !important;
     }
 }
