@@ -523,11 +523,11 @@ blockquote.emph {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .credit-item.thanks {
-    min-width: 71vw;
+    text-align: justify;
 }
 
 .credit-item h3 {
@@ -876,8 +876,5 @@ blockquote.emph {
 @media (max-width: 512px) and (min-width: 320px) {
     .tracklist .track-last {
         grid-column: auto; 
-    }
-    .credit-item.thanks {
-        min-width: 30vw !important;
     }
 }
