@@ -727,6 +727,11 @@ blockquote.emph {
    CTA Y BOTONES
    ========================================== */
 
+.booklet-btn {
+    margin: 0.4rem 0 0 0;
+    display: inline-flex;
+}
+
 .cta {
     text-align: center !important;
     margin-top: 40px !important;
@@ -748,7 +753,7 @@ blockquote.emph {
     flex-wrap: wrap;
 }
 
-.platform-btn {
+.platform-btn, .booklet-btn {
     padding: 12px 30px;
     background: #4A4A4A;
     color: #F5EFE6;
@@ -760,7 +765,7 @@ blockquote.emph {
     transition: background 0.3s;
 }
 
-.platform-btn:hover {
+.platform-btn, .booklet-btn:hover {
     background: #666;
 }
 
