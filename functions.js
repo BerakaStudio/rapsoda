@@ -47,17 +47,17 @@ const trackData = {
         creditsFile: "creditos/9.txt"
     },
     10: {
-        title: "¡Tres, Dos, Uno! ft. Pastor MC",
+        title: "Tres, Dos, Uno ft. Pastor MC",
         lyricsFile: "letras/10.txt",
         creditsFile: "creditos/10.txt"
     },
     11: {
-        title: "Girasoles ft. Sofía Brand",
+        title: "Girasoles",
         lyricsFile: "letras/11.txt",
         creditsFile: "creditos/11.txt"
     },
     12: {
-        title: "Caminata",
+        title: "Caminata ft. JJBeats",
         lyricsFile: "letras/12.txt",
         creditsFile: "creditos/12.txt"
     },
@@ -72,7 +72,7 @@ const trackData = {
         creditsFile: "creditos/14.txt"
     },
     15: {
-        title: "Convicciones ft. Tony Capredi",
+        title: "Convicciones ft. Tony Capredi y Patricio Silva",
         lyricsFile: "letras/15.txt",
         creditsFile: "creditos/15.txt"
     },
