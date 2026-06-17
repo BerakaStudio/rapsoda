@@ -830,8 +830,9 @@ blockquote.emph {
     transition: background 0.3s;
 }
 
-.platform-btn, .booklet-btn:hover {
+.platform-btn:hover, .booklet-btn:hover {
     background: #666;
+    transition: background 0.3s;
 }
 
 /* ==========================================
