@@ -375,6 +375,15 @@ blockquote.emph {
     margin-left: auto;
     margin-right: auto;
 }
+blockquote.emph a {
+    color: #f3e4bd;
+    text-decoration: none;
+}
+blockquote.emph a:hover {
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
 /* ==========================================
    PÁGINA ÁLBUM
    ========================================== */
