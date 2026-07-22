@@ -47,7 +47,7 @@ const trackData = {
         creditsFile: "creditos/9.txt"
     },
     10: {
-        title: "Tres, Dos, Uno ft. Pastor MC",
+        title: "Reencuentros ft. Pastor MC",
         lyricsFile: "letras/10.txt",
         creditsFile: "creditos/10.txt"
     },
