@@ -42,7 +42,7 @@ body {
     bottom: clamp(20px, 3vw, 40px);
     overflow-y: auto;
     overflow-x: hidden;
-    background: #F3E4BD;
+    background: #E8D9B4;
     border-radius: 12px;
     scroll-behavior: smooth;
 }
@@ -82,7 +82,7 @@ nav ul {
 }
 
 nav a {
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -187,7 +187,7 @@ nav a.active {
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 30px;
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-transform: uppercase;
 }
 
@@ -245,7 +245,7 @@ nav a.active {
 .track-number {
     font-size: 16px;
     font-weight: 800;
-    color: #F3E4BD;
+    color: #E8D9B4;
     min-width: 30px;
 }
 
@@ -326,7 +326,7 @@ nav a.active {
     letter-spacing: 0;
     line-height: 1;
     margin-bottom: 40px;
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-transform: uppercase;
     text-align: center;
 }
@@ -338,7 +338,7 @@ nav a.active {
     letter-spacing: -1px;
     line-height: 1;
     margin-bottom: 30px;
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-transform: uppercase;
     text-align: center;
     margin-top: 1em;
@@ -368,7 +368,7 @@ nav a.active {
 blockquote.emph {
     text-align: center;
     font-size: 1.6rem;
-    color: #f3e4bd;
+    color: #E8D9B4;
     line-height: 1.3em;
     max-width: 900px;
     margin-bottom: 30px;
@@ -376,7 +376,7 @@ blockquote.emph {
     margin-right: auto;
 }
 blockquote.emph a {
-    color: #f3e4bd;
+    color: #E8D9B4;
     text-decoration: none;
 }
 blockquote.emph a:hover {
@@ -411,7 +411,7 @@ blockquote.emph a:hover {
 .album-cover {
     width: 100%;
     aspect-ratio: 1;
-    background: url(imagenes/bg3.jpg);
+    background: url(imagenes/bg4.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -423,14 +423,14 @@ blockquote.emph a:hover {
     font-family: "Big Shoulders", "Inter", Arial, sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    color: #f3e4bd;
+    color: #E8D9B4;
     text-transform: uppercase;
     margin-bottom: 1rem;--*/
     font-family: "Inter", Arial, sans-serif;
     font-size: 3rem;
     font-weight: 800;
     letter-spacing: -1px;
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
@@ -464,7 +464,7 @@ blockquote.emph a:hover {
 .music-platforms li a {
     width: auto;
     font-size: 2rem;
-    color: #f3e4bd;
+    color: #E8D9B4;
     text-decoration: none;
 }
 .music-platforms li a:hover {
@@ -482,7 +482,7 @@ blockquote.emph a:hover {
     letter-spacing: 0;
     line-height: 1;
     margin-bottom: 40px;
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-transform: uppercase;
     text-align: center;
 }
@@ -500,7 +500,7 @@ blockquote.emph a:hover {
 
 .track-icon {
     font-size: 1.4rem;
-    color: #F3E4BD;
+    color: #E8D9B4;
     transition: color 0.3s;
     vertical-align: middle;
     display: flex;  
@@ -524,7 +524,7 @@ blockquote.emph a:hover {
     letter-spacing: 0;
     line-height: 1;
     margin-bottom: 40px;
-    color: #F3E4BD;
+    color: #E8D9B4;
     text-transform: uppercase;
     text-align: center;
 }
@@ -536,7 +536,7 @@ blockquote.emph a:hover {
     letter-spacing: -0.02rem;
     line-height: 2.4rem;
     text-align: center;
-    color: #f3e4bd;
+    color: #E8D9B4;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -692,7 +692,7 @@ blockquote.emph a:hover {
     background: none;
     border: none;
     font-size: 2.6rem;
-    color: #f3e4bdfc;
+    color: #E8D9B4fc;
     cursor: pointer;
     transition: opacity 0.3s;
     font-weight: 200;
@@ -705,7 +705,7 @@ blockquote.emph a:hover {
 .modal-header h3 {
     font-size: 1.4rem;
     font-weight: 600;
-    color: #f3e4bd;
+    color: #E8D9B4;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -751,7 +751,7 @@ blockquote.emph a:hover {
 }
 
 .modal-section.section-lyrics::-webkit-scrollbar-thumb {
-    background: #F3E4BD;
+    background: #E8D9B4;
     border-radius: 4px;
 }
 
@@ -762,7 +762,7 @@ blockquote.emph a:hover {
 .modal-section h4 {
     font-size: 16px;
     font-weight: 600;
-    color: #f3e4bd;
+    color: #E8D9B4;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -820,7 +820,7 @@ blockquote.emph a:hover {
 .cta-text {
     font-size: 1.6rem !important;
     font-weight: 800;
-    color: #F3E4BD !important;
+    color: #E8D9B4 !important;
     margin-bottom: 2rem !important;
     text-align: center !important;
 }
