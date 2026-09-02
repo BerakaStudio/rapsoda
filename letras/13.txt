@@ -16,7 +16,6 @@ Interpretes el significado
 Interpretes el significado
 Interpretes el significado
 Interpretes el significado
-Interpretes el significado
 Con los ojos apropiados
 
 [Puente: Salvador Dalí]
@@ -44,8 +43,7 @@ Todavía humano
 
 [Coro]
 Je suis le solitaire, je suis le solitaire
-Je suis le solitaire, je suis le solitaire
-De son coeur vient la lumière
+Je suis le solitaire, de son coeur vient la lumière
 
 [Verso 3]
 Sensación etérea, lento y doloroso
@@ -65,5 +63,17 @@ Que mon squelette
 
 [Outro]
 Je suis le solitaire, je suis le solitaire
-Je suis le solitaire, je suis le solitaire
-De son coeur vient la lumière
+Je suis le solitaire, de son coeur vient la lumière
+
+
+[Traducción coro]
+Soy el solitario, soy el solitario,
+Soy el solitario, de Su corazón viene la luz.
+
+[Traducción Diálogo Raymond Dufayel]
+No tienes huesos de cristal
+Puedes enfrentarte a la vida
+Si dejas pasar esta oportunidad
+Entonces, con el tiempo, será tu corazón
+El que se vuelva tan seco y frágil
+Como mi esqueleto.
