@@ -545,6 +545,15 @@ text-decoration: none;
 color: #fff;
 }
 
+.gnsicon {
+  fill: #E8D9B4;
+  margin-left: .2rem;
+}
+.gnsicon:hover {
+  fill: #FFFFFF;
+}
+
+
 .disponible {
 margin-top: 3rem;
 text-transform: uppercase;
