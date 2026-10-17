@@ -593,6 +593,13 @@ display: flex;
 color: #fff;
 }
 
+.infolyrics {
+  font-size: 0.95rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+  margin-left: 0.3rem;
+}
+
 /* Créditos */
 .credits-section {
 margin-top: 60px;
