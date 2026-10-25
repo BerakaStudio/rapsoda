@@ -376,7 +376,7 @@ background-position: center;
 }
 
 .historia-hero-3 {
-background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagenes/bg5.jpg);
+background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(imagenes/bg6.jpg);
 background-size: cover;
 background-position: center;
 }
@@ -598,6 +598,30 @@ color: #fff;
   font-weight: normal;
   line-height: 1.5rem;
   margin-left: 0.3rem;
+}
+
+.txt-ph-mcd {
+    display: flex;
+    width: auto;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.txt-ph-mcd div:first-of-type {
+    display: flex;
+    width: 100%;
+    margin: 0 2rem 0 0;
+    background-image: url(imagenes/bg5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26rem;
+    border-radius: 10px;
+    background-position-x: -112px;
+}
+.minicd-ph {
+  width: 100%;
+  height: fit-content;
 }
 
 /* Créditos */
