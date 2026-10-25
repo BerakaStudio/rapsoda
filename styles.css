@@ -1217,3 +1217,47 @@ ul.instructions li p {
     padding: 10px 12px;
   }
 }
+
+/* Apoyo y colaboradores: adaptación para móviles */
+@media screen and (max-width: 700px) {
+
+    .credits-ausp ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.25rem 1rem;
+
+        width: 100%;
+        box-sizing: border-box;
+        margin: 1rem 0 0;
+        padding: 0;
+    }
+
+    .credits-ausp ul li {
+        display: flex;
+        flex-flow: column;
+        flex: 0 1 6rem;
+
+        width: auto;
+        min-width: 0;
+        margin-right: 0;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .credits-ausp ul li img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .credits-ausp ul li p {
+        display: block;
+        width: 100%;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+}
